@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-family: 'Inter';
+    margin: 0;
+}
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0px;
+    position: absolute;
+left: 0px;
+top: 0px;
+    width: 100%
+}
+img #profile-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px; 
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 343px;
+    height: 700px;    
+}
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    isolation: isolate;
+    width: 343px;
+    height: 140px;
+}
+.link-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+}
+button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 8px;
+    background: #EAECF0;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    width: 100%;
+    height: 68px;
+      
+}
+button a {
+text-decoration: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+color: #101828;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0px;
+    gap: 64px;
+    position:absolute;
+    top: 788px;
+    background: #FFFFFF;
+    flex: none;
+    order: 1;   
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 32px; 
+    width: 375px;
+    height: 24px;    
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 26.25px;
+    height: 24px;  
+}
+.footer-below {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0px;
+    position: absolute;
+    width: 100%;
+    height: 196px;
+    /* Base/White */
+    
+    background: #FFFFFF;    
+}
+.below-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 16px;
+    gap: 32px;
+    width: 100%;
+    height: 132px;
+    /* Inside auto layout */ 
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;    
+}
+.below-content {
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px 0px 0px;
+    width: 100%;
+    height: 132px;
+    left: 0px;
+    border: 1px solid #000207;
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: str
+}
+#slack {
+    display: none;
+}
+#twitter {
+    margin-top: 24px;
+    width: 343px;
+    height: 28px;
+    /* Text lg/Bold */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    text-align: center;
+    /* Gray/900 */
+    color: #101828;    
+}
+#internship-9 {
+    /* Text sm/Normal */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #667085;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+        height: 1088px
+    }
+    .link-section {
+        position:absolute;
+        top: 246px;
+        width: 100%;
+        height: 528px;
+        padding: 0 16px;
+        left: 0px;  
+    }
+    .content .circle-right {
+        position: absolute;
+        right: 16px;
+        top: 44px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        z-index: 2;
+    }
+
+    .footer-container
+    .footer-below {
+        position: absolute;
+        width: 375px;
+        padding: 32px 0px;
+        height: 196px; 
+        top: 998px;
+        left: 0px;
+        margin-top: 32px;
+    
+    }
+    .below-content {
+        width: 320px;
+        height: 132px;
+        left: 0px;
+    }
+    .share-desktop {
+        display: none;
+    }
+    .footer-below2, .below-container2, .below-content2 {
+        display: none;
+    }
+  }
+
+
+@media screen and (min-width: 768px) {
+    body {
+        height: 1158px
+
+    }
+    .main-section {
+        height: 774px;
+        width: 100%;
+        margin: 0px;
+    }
+    .content {
+   
+    }
+    .link-section {
+        position:absolute;
+        top: 262px;
+        width: 100%;
+        height: 528px;
+        padding: 0 144px;
+        left: 0px;  
+    }
+    .footer-social {
+        top: 862px;
+    }
+    .circle-right {
+        display: none;
+    }
+    .share-desktop {
+        position: absolute;
+        right: 200px;
+        top: 44px;
+        /* Gray/300 */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        z-index: 2;
+    }
+    .footer-below, .below-container, .below-content {
+        display: none;
+    }
+    .footer-below2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        gap: 64px;
+        top: 998px;
+        height: 160px;
+        left: 0px;
+    }
+    .below-container2 {
+        position: absolute;
+        margin: auto;
+        height: 64px;
+        padding: auto;
+        gap: 32px;
+        left: 80px;
+    }
+    .below-content2 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 0px 0px;
+        margin: 0 32px;
+        gap: 42px;
+        width: 100%;
+        height: 64px;
+        border-top: 1px solid #EAECF0;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+    .below-content2 {
+        gap: 160px;
+    }
+  } 
+
+  @media only screen and (min-width: 1200px) {
+    .below-content2 {
+        gap: 250px;
+    }
+    .share-desktop {
+        right: 350px;   
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .below-content2 {
+        gap: 350px;
+    }
+    .share-desktop {
+        right: 300px;   
+    }
+  }
+
+
+
+
+
